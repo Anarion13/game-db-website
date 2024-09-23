@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import GameCard from './GameCard';
-import './GameLists.css';
+import '../styles/GameLists.css';
 
 function InProgress() {
   const [games, setGames] = useState([]);

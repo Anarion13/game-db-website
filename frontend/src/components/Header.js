@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
-import './Header.css';
+import '../styles/Header.css';
 
 function Header() {
   const { user } = useAuth();

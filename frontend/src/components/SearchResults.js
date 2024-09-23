@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import GameCard from './GameCard';
 import { searchGames } from '../services/api';
-import './GameGrid.css';
+import '../styles/GameLists.css';
 
 function SearchResults() {
   const [games, setGames] = useState([]);

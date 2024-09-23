@@ -4,14 +4,14 @@ import { AuthProvider } from './contexts/AuthContext';
 import { NotificationProvider } from './contexts/NotificationContext';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
-import GameList from './components/GameList';
+import GameList from './components/GameLists';
 import SearchResults from './components/SearchResults';
 import Login from './components/Login';
 import Backlog from './components/Backlog';
 import InProgress from './components/InProgress';
 import Finished from './components/Finished';
-import './App.css';
-import './index.css';
+import './styles/App.css';
+import './styles/index.css';
 
 function App() {
   return (

@@ -1,0 +1,131 @@
+@import '../styles/common.css';
+
+.backlog,
+.in-progress,
+.finished {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.game-card {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 10px;
+  width: 300px;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+.game-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Ensure text is left-aligned */
+  align-items: flex-start; /* Ensure content is left-aligned */
+}
+
+.game-title {
+  font-size: 1.5rem; /* Adjust this value to control the font size of game names */
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.8rem;
+  line-height: 1.2;
+}
+
+.game-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start; /* Ensure content is left-aligned */
+}
+
+.game-release {
+  font-size: 0.875rem;
+  color: #b0b0b0;
+  text-align: left; /* Ensure text is left-aligned */
+  width: 100%; /* Ensure it takes the full width */
+}
+
+.game-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.platform-tag {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1200px) {
+  .game-list {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 cards per row for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .game-list {
+    grid-template-columns: 1fr; /* Adjust to 1 card per row for mobile screens */
+  }
+}
+
+.backlog-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.backlog-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.year-group {
+  margin-bottom: 30px;
+}
+
+.year-heading {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.game-grid {
+  display: grid; /* Assuming .grid class sets display: grid */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .game-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

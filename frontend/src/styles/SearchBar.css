@@ -1,3 +1,5 @@
+@import '../styles/common.css';
+
 .search-bar {
   display: flex;
   margin: 1rem 0;
@@ -7,14 +9,14 @@
   flex-grow: 1;
   padding: 0.5rem;
   font-size: 1rem;
-  background-color: #2c2c2c;  /* Dark background */
-  color: #ffffff;  /* Light text */
+  background-color: #2c2c2c;
+  color: #ffffff;
   border: 1px solid #444;
   border-radius: 4px 0 0 4px;
 }
 
 .search-input::placeholder {
-  color: #888;  /* Lighter placeholder text */
+  color: #888;
 }
 
 .search-button {
@@ -31,7 +33,6 @@
   background-color: #45a049;
 }
 
-/* Focus styles */
 .search-input:focus {
   outline: none;
   border-color: #4CAF50;
